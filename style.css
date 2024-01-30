@@ -1,0 +1,425 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: pp mori;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.cursor {
+  transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #EDBFFF;
+  z-index: 9999;
+}
+#purple{
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  background-color: #EDBFFF;
+  z-index: 100;
+  opacity: 0;
+  display: none;
+  transition: all ease 1s;
+}
+
+.main {
+  background-color:#101820;
+  cursor: none;
+overflow: hidden;
+}
+
+.page1{
+  text-transform: uppercase;
+  min-height : 90vh;
+  width: 100%;
+  position: relative;
+  z-index: 9;
+  padding-top:19vw ;
+}
+
+
+#navi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ color: #79AEB2;
+}
+
+#navi a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #79AEB2;
+}
+
+#nav {
+  height: 55px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:  0 30px;
+  position: fixed;
+  mix-blend-mode: difference;
+  z-index: 102;
+  text-decoration: none;
+  color: #79AEB2;
+}
+
+#nav-part2 {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  color: #79AEB2;
+}
+
+#nav h4{
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #79AEB2;
+}
+
+#nav h4:nth-child(1){
+  border-bottom: 1.5px solid #ffff;
+  text-decoration: none;
+
+}
+
+.page1 h1{
+font-size: 8vw;
+font-weight: 1000;
+font-family: pp mori;
+margin-left: 9vw;
+color: #79AEB2;
+}
+.page1 h2{
+font-size: 7.5vw;
+font-weight: 1000;
+font-family: pp mori;
+margin-left: 26vw;
+color: #79AEB2;
+}
+
+#small-headings {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 100px;
+  padding-right: 50px;
+}
+
+#small-headings h5 {
+  font-size: 1vw;
+  margin-top: .5vw;
+  text-align: right;
+  text-transform: uppercase;
+  color: #79AEB2;
+}
+
+.bounding {
+  width: 100%;
+  overflow: hidden;
+}
+
+.belem {
+  transform: translateY(200%);
+  font-family: pp mori;
+}
+
+#hero-footer {
+  padding: 0 2vw;
+  position: absolute;
+  width: 100%;
+  bottom: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: pp mori;
+}
+
+#hero-footer a {
+  color: #79AEB2;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#hero-footer #iconset {
+  display: flex;
+  gap: 5px;
+}
+
+
+
+.page2{
+  min-height: 90vh;
+  width: 100%;
+  padding: 100px 5vw;
+  position: relative;
+  z-index: 9;
+  
+}
+
+.page2 h1 {
+  font-size:7vw;
+  font-weight: 500;
+  color: #79AEB2;
+}
+
+.page2-container{
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+
+}
+
+.page2-left{
+  width: 30%;
+}
+
+.page2-right{
+  width: 24%;
+}
+
+.page2-left h2{
+  font-size: 2.5vw;
+  font-weight: 300;
+  color: #79AEB2;
+  line-height: 4vw;
+
+}
+
+.page2-right p{
+  font-size: 30px;
+  color: #79AEB2;
+}
+
+.page2-right button {
+  width: 100%;
+  border-radius: 50px;
+  border: none;
+  padding: 4px 0;
+  color: #111;
+  margin-top: 20px;
+
+}
+
+.page5{
+  min-height: 100vh;
+  width: 100%;
+   position: relative;
+   z-index: 5;
+   padding: 140px 100px;
+}
+
+.elem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-div{
+  height: 120px;
+  overflow: hidden;
+} 
+
+.elem h1{
+ font-size: 8vw;
+ font-weight: 500;
+ font-family: pp mori;
+ color: #79AEB2;
+transition: all ease-out 0.5s;
+} 
+
+.elem:hover h1 {
+  transform:translateY(-100%);
+  color: #EDBFFF;
+  z-index: 0;
+}
+
+.elem:hover img {
+ opacity: 1;
+  transform: translateY(10%) rotate(3deg);
+} 
+
+ .elem img { 
+  height: 300px;
+  width: 400px;
+  position: absolute;
+  opacity: 0;
+  transition: all ease-out 0.5s;
+}  
+
+#right{
+  padding-top: 100px;
+  height: 250px;
+  width: 350px;
+  position: absolute;
+  transition: all ease-out 0.5s;
+  right: 8%;
+}
+
+ .elem img:nth-child(1){
+  left:2%;
+  z-index:8;
+} 
+
+.elem img:nth-child(3){
+  right:10%;
+}
+
+
+.page6{
+  min-height: 100vh;
+  width: 100%;
+ position: relative;
+}
+
+#Second {
+  color: #79AEB2;
+  padding-right: 10vw;
+  padding-top: 280px;
+  width: 100%;
+   height: 120vh;  /*Vh is important for the height of the page and also helps during resposiveness.*/
+}
+
+.last {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 3.5vw 3vw;
+  padding-right: 0;
+  border-top: 1px solid #888;
+}
+
+.last h1 {
+  text-transform: uppercase;
+  font-size: 6vw;
+  opacity: .7;
+  font-family: pp mori;
+}
+
+.andlast {
+  border-bottom: 1px solid #888;
+}
+
+.last img {
+  opacity: 0;
+  pointer-events: none;
+  height: 120%;
+  z-index: 999;
+  position: absolute;
+  transform: translate(-50%,-50%);
+}
+
+
+.page6 h2{
+  font-size: 4vw;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 50px;
+
+}
+
+#About {
+  display: flex;
+  align-items: center;
+  color: #79AEB2;
+  gap: 80px;
+  padding: 10vw 10vw;
+  padding-left: 40vw;
+  width: 100%;
+}
+
+#textabout {
+width: 25rem;
+}
+
+#textabout h5 {
+text-transform: uppercase;
+opacity: .5;
+margin-bottom: 10px;
+}
+#textabout p {
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+#textabout a{
+  padding: 10px 22px;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  color: #79AEB2;
+  font-size: 10px;
+  text-decoration: none;
+
+}
+
+#About img {
+  width: 230px;
+}
+
+#subscribe{
+  color: #79AEB2;
+  padding: 20px 30px;
+  padding-bottom: 7vw;
+}
+
+#subscribe h5{
+  text-transform: uppercase;
+  opacity: .6;
+}
+
+#subscribe h3 {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+
+#footer {
+  background-color: #121b24;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 30px;
+}
+
+#footerleft {
+  color: #79AEB2;
+  display: flex;
+  gap: 20px;
+
+}
+
+#footerright{
+  display: flex;
+  gap: 30px;
+}
+
+#footer a{
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #79AEB2;
+  text-decoration: none;
+
+}
